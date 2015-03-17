@@ -20,9 +20,9 @@
 */*/*/obj/*
 */*/publish/*
 **/packages/*
-UnityProject/Assets/Dlls/*
-UnityProject/Assets/UnityVS/*
-UnityProject/Assets/UnityVS.*
-UnityProject/UnityVS.*
-UnityProject/.vs
+/Assets/Dlls/*
+/Assets/UnityVS/*
+/Assets/UnityVS.*
+/UnityVS.*
+/*.vs
 *.psess
