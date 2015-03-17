@@ -1,0 +1,5 @@
+if exist "%1..\..\UnityProject\Assets\Dlls\*.dll" del "%1..\..\UnityProject\Assets\Dlls\*.dll"
+xcopy "%2*.dll" "%1..\..\UnityProject\Assets\Dlls\"
+del "%1..\..\UnityProject\Assets\Dlls\UnityEngine.dll"
+del "%1..\..\UnityProject\Assets\Dlls\UnityEngine.UI.dll"
+del "%1..\..\UnityProject\Assets\Dlls\UnityEditor.dll"
