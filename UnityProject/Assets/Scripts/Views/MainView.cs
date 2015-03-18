@@ -1,4 +1,5 @@
 ﻿using IteratorTasks;
+using Login;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -29,6 +30,11 @@ public class MainView : MonoBehaviour
     /// </summary>
     private IUpdatable _updatables = null;
 
+    /// <summary>
+    /// ログインモデル。
+    /// </summary>
+    private LoginModel _loginModel = new LoginModel();
+
     private void Update()
     {
         // 中で実行中のTaskクラスのイテレータが進む。
@@ -47,6 +53,9 @@ public class MainView : MonoBehaviour
         var updatables = new UpdatableCollection();
         updatables.Add(new TaskRunner(OnUnhandledException));
         _updatables = updatables;
+
+        // スタートボタンのクリック購読。
+        _startButton.Click.Subscribe(() => Login());
     }
 
     /// <summary>
@@ -71,5 +80,14 @@ public class MainView : MonoBehaviour
             Debug.LogError(e.ToString());
             yield return _dialogManager.ShowAsync("エラー", e.Message);
         }
+    }
+
+    /// <summary>
+    /// ログインを開始する。
+    /// </summary>
+    private void Login()
+    {
+        var handler = new LoginProgressHandler(_dialogManager);
+        _loginModel.LoginAsync(handler.GetListener());
     }
 }
