@@ -29,8 +29,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityCommon.uGUI", "..\..\O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityCommon.UnityEditorExtensions", "..\..\OcCommon\UnityExtensions\UnityCommon.UnityEditorExtensions\UnityCommon.UnityEditorExtensions.csproj", "{A6FFD028-C3F2-4B58-B956-0EC757482DB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedCommon", "..\..\TypeGen\TypeGeneration\GeneratedCommon\GeneratedCommon.csproj", "{01446FB9-A42C-42C1-A687-5AD6DACDE13B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedCommon.IteratorTasks", "..\..\TypeGen\TypeGeneration\GeneratedCommon.IteratorTasks\GeneratedCommon.IteratorTasks.csproj", "{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\..\OcCommon\UnityExtensions\Common\Common.csproj", "{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorTasks.Unity", "..\..\OcCommon\UnityExtensions\IteratorTasks.Unity\IteratorTasks.Unity.csproj", "{733757DE-ABA7-42C9-9466-B4764ECC3A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Data", "..\..\OcCommon\UIData\UI.Data\UI.Data.csproj", "{43882996-09C4-4F39-ABA9-A9671D4B93B8}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\TypeGen\TypeGeneration\GeneratedCommon.Shared\GeneratedCommon.Shared.projitems*{da4cb59f-cfda-4601-a984-b7c2562ace3e}*SharedItemsImports = 4
 		..\..\IteratorTasks\Event.Shared\Event.Shared.projitems*{666165cc-e355-4e1e-b9a1-da61c0d556bc}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -112,6 +123,46 @@ Global
 		{A6FFD028-C3F2-4B58-B956-0EC757482DB3}.IosRelease|Any CPU.Build.0 = Release|Any CPU
 		{A6FFD028-C3F2-4B58-B956-0EC757482DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6FFD028-C3F2-4B58-B956-0EC757482DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B}.IosDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B}.IosDebug|Any CPU.Build.0 = Debug|Any CPU
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B}.IosRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B}.IosRelease|Any CPU.Build.0 = Release|Any CPU
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}.IosDebug|Any CPU.ActiveCfg = IosDebug|Any CPU
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}.IosDebug|Any CPU.Build.0 = IosDebug|Any CPU
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}.IosRelease|Any CPU.ActiveCfg = IosRelease|Any CPU
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}.IosRelease|Any CPU.Build.0 = IosRelease|Any CPU
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}.IosDebug|Any CPU.ActiveCfg = IosDebug|Any CPU
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}.IosDebug|Any CPU.Build.0 = IosDebug|Any CPU
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}.IosRelease|Any CPU.ActiveCfg = IosRelease|Any CPU
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}.IosRelease|Any CPU.Build.0 = IosRelease|Any CPU
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D}.IosDebug|Any CPU.ActiveCfg = IosDebug|Any CPU
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D}.IosDebug|Any CPU.Build.0 = IosDebug|Any CPU
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D}.IosRelease|Any CPU.ActiveCfg = IosRelease|Any CPU
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D}.IosRelease|Any CPU.Build.0 = IosRelease|Any CPU
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8}.IosDebug|Any CPU.ActiveCfg = IosDebug|Any CPU
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8}.IosDebug|Any CPU.Build.0 = IosDebug|Any CPU
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8}.IosRelease|Any CPU.ActiveCfg = IosRelease|Any CPU
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8}.IosRelease|Any CPU.Build.0 = IosRelease|Any CPU
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,5 +176,10 @@ Global
 		{E8E3BEEE-AFBC-4DA2-A493-9C6CA7F39DAF} = {38430908-39D1-4ED1-9575-1F1D9BA1796B}
 		{009793F2-6AE8-4720-BD91-0F0F2BF6083B} = {38430908-39D1-4ED1-9575-1F1D9BA1796B}
 		{A6FFD028-C3F2-4B58-B956-0EC757482DB3} = {38430908-39D1-4ED1-9575-1F1D9BA1796B}
+		{01446FB9-A42C-42C1-A687-5AD6DACDE13B} = {38430908-39D1-4ED1-9575-1F1D9BA1796B}
+		{DA4CB59F-CFDA-4601-A984-B7C2562ACE3E} = {38430908-39D1-4ED1-9575-1F1D9BA1796B}
+		{F822B2EA-D5F6-45C3-AE0E-CA25656CEEE8} = {38430908-39D1-4ED1-9575-1F1D9BA1796B}
+		{733757DE-ABA7-42C9-9466-B4764ECC3A0D} = {38430908-39D1-4ED1-9575-1F1D9BA1796B}
+		{43882996-09C4-4F39-ABA9-A9671D4B93B8} = {38430908-39D1-4ED1-9575-1F1D9BA1796B}
 	EndGlobalSection
 EndGlobal
